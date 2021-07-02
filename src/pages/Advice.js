@@ -1,5 +1,7 @@
+import AdviceCard from '../components/AdviceCard';
+
 function Advice() {
-  return <div>Advice</div>;
+  return <AdviceCard />;
 }
 
 export default Advice;

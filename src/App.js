@@ -4,7 +4,7 @@ import './App.css';
 
 import Home from './pages/Home';
 import Advice from './pages/Advice';
-import More from './pages/More';
+import Statistics from './pages/More';
 import Profile from './pages/Profile';
 import MenuBar from './components/MenuBar';
 import { AppBar, Toolbar, Typography, makeStyles, Container } from '@material-ui/core';
@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarSpacer: theme.mixins.toolbar,
   container: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
   },
   content: {
     flexGrow: 1,
@@ -49,7 +49,7 @@ function App() {
         <Container className={classes.container}>
           <Route exact path="/" component={Home} />
           <Route exact path="/advice" component={Advice} />
-          <Route exact path="/more" component={More} />
+          <Route exact path="/more" component={Statistics} />
           <Route exact path="/profile" component={Profile} />
         </Container>
       </main>
